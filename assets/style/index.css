@@ -1,0 +1,107 @@
+.product{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.product .text{
+    color: white;
+}
+.product .text h1{
+    font-size: 20px;
+    font-weight: 500;
+}
+.product .text p{
+    font-size: 15px;
+    color: rgb(230, 230, 230);
+}
+
+.best-seller .list{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.best-seller .list a{
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background: url(../img/product/banner-product.png);
+    background-position: center;
+    display: flex;
+    gap: 10px;
+}
+.best-seller .list a img{
+    width: 80px;
+    border-radius: 10px;
+}
+.best-seller .list a .game{
+    display: flex;
+    flex-direction: column;
+}
+.best-seller .list a .game #name{
+    color: white;
+    font-size: 15px;
+}
+.best-seller .list a .game #dev{
+    color: rgb(210, 210, 210);
+    font-size: 14px;
+}
+
+.kategori{
+    background: rgb(20, 20, 20);
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.kategori a{
+    background: rgb(40, 40, 40);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.list-prd .list{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.list-prd .list a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+.list-prd .list img{
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1100px) {
+    .best-seller .list{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .list-prd .list{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (max-width:800px) {
+    .best-seller .list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .list-prd .list{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (max-width:500px) {
+    .best-seller .list{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
