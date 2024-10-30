@@ -30,8 +30,12 @@
     width: 100%;
     background: url(../img/product/banner-product.png);
     background-position: center;
+    transition: .2s;
     display: flex;
     gap: 10px;
+}
+.best-seller .list a:hover{
+    background-position: top;
 }
 .best-seller .list a img{
     width: 80px;
@@ -69,7 +73,7 @@
 }
 
 .list-prd .list{
-    gap: 15px;
+    gap: 20px;
     display: grid;
     grid-template-columns: repeat(6,1fr);
 }

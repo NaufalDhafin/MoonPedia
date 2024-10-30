@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: rubik;
+}
+
+form{
+    max-width: 350px;
+    width: 90%;
+    background: rgb(50, 50, 50);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form .atas #text{
+    color: white;
+    font-size: 25px;
+}
+form .atas #sub{
+    color: rgb(220, 220, 220);
+}
+
+form .input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+form .input label{
+    border: 2px solid white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+form .input label p{
+    width: 110px;
+    color: white;
+    font-size: 15px;
+}
+form .input label input{
+    background: none;
+    border: none;
+    height: 27px;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    font-family: josefin sans;
+    font-size: 17px;
+    padding: 0 5px;
+    border: 1px solid transparent;
+}
+form .link{
+    margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+form .link a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+form button{
+    background: orange;
+    border: none;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
