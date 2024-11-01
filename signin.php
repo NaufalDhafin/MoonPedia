@@ -14,8 +14,8 @@
         </div>
         <div class="input">
             <label for="">
-                <p>Email</p>
-                <input type="email" name="email">
+                <p>Email / Whatsapp</p>
+                <input type="text" name="form">
             </label>
             <label for="">
                 <p>Password</p>
@@ -26,7 +26,21 @@
             <a href="signup.html">Daftar akun</a>
             <a href="lostpass.html">Lupa Password</a>
         </div>
-        <button type="submit">Masuk Sekarang</button>
+        <button type="submit" name="confrim">Masuk Sekarang</button>
     </form>
+    <?php 
+        if(isset($_POST['confirm'])){
+            $form = $_POST['form'];
+            $pass = md5($_POST['pass']);
+            $query = $confapp->query("SELECT * FROM users WHERE whatsapp = '$form' OR email = '$form' AND password = '$pass'");
+            $cek   = mysqli_num_rows($query);
+            if($cek > 0){
+                $dataUser = $query->fetch_array();
+                session_start();
+                $_SESSION['userid'] = $dataUser['userid'];
+                echo "<meta http-equiv='refresh' content='0;index.html'>";
+            }
+        }
+    ?>
 </body>
 </html>

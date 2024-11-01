@@ -18,7 +18,7 @@ form{
     max-width: 350px;
     width: 90%;
     background: rgb(50, 50, 50);
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ form{
 
 form .atas #text{
     color: white;
-    font-size: 25px;
+    font-size: 22px;
 }
 form .atas #sub{
     margin-top: 5px;
@@ -48,9 +48,10 @@ form .input label{
     border-radius: 10px;
 }
 form .input label p{
-    width: 110px;
+    width: 120px;
     color: white;
     font-size: 15px;
+    border-right: 2px solid white;
 }
 form .input label input{
     background: none;
@@ -63,6 +64,11 @@ form .input label input{
     font-size: 17px;
     padding: 0 5px;
     border: 1px solid transparent;
+}
+form .input label input:focus,
+form .input label input:focus-visible {
+    border-color: none;
+    outline: none;
 }
 form .link{
     margin-top: -10px;
@@ -79,10 +85,25 @@ form .link a{
 form button{
     background: orange;
     border: none;
-    height: 35px;
+    height: 40px;
     border-radius: 10px;
     color: white;
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.alert{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+.done{
+    color: lightgreen;
+}
+.error{
+    color: lightcoral;
 }
