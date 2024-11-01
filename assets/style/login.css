@@ -30,6 +30,7 @@ form .atas #text{
     font-size: 25px;
 }
 form .atas #sub{
+    margin-top: 5px;
     color: rgb(220, 220, 220);
 }
 

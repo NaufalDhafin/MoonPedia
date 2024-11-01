@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    font-family: rubik;
+}
+
+.input-group {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    min-height: 40px;
+    max-width: 200px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+
+.button--submit {
+    min-height: 48px;
+    padding: .5em 1em;
+    border-radius: 0 6px 6px 0;
+    background-color: white;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .2s;
+    color: orange;
+}
+
+.button--submit:hover {
+    background-color: orange;
+    color: white;
+}
+
+.input:focus,
+.input:focus-visible {
+    border-color: orange;
+    outline: none;
+}
+
+.button--submit i {
+    font-size: 20px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+}
+
+hr {
+    height: 1px;
+    background-color: rgba(40,40,40);
+    border: none;
+}
+
+.card {
+    width: 400px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(16, 86, 82, .75);
+    font-weight: 700;
+    font-size: 15px;
+    color: #000000;
+}
+
+/* Cart */
+.cart {
+    border-radius: 19px 19px 0px 0px;
+}
+
+.cart .steps {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.cart .steps .step {
+    display: grid;
+    gap: 10px;
+}
+
+.cart .steps .step span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.cart .steps .step p {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* Promo */
+.promo form {
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    gap: 10px;
+    padding: 0px;
+}
+
+.input_field {
+    width: auto;
+    height: 36px;
+    padding: 0 0 0 12px;
+    border-radius: 5px;
+    outline: none;
+    border: px solid rgb(20,20,20);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 0px 2px rgb(36, 36, 36);
+    background-color: rgb(247, 247, 247);
+}
+
+.promo form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 10px;
+    width: 100%;
+    height: 36px;
+    background: orange;
+    box-shadow: 0px 0.5px 0.5px #F3D2C9, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border-radius: 5px;
+    border: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Checkout */
+.payments .details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 0px;
+    gap: 5px;
+}
+
+.payments .details span:nth-child(odd) {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    margin: auto auto auto 0;
+}
+
+.payments .details span:nth-child(even) {
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    margin: auto 0 auto auto;
+}
+
+.checkout{
+    background: none;
+}
+.checkout .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    background-color: orange;
+    border-radius: 0 0 20px 20px;
+}
+
+.price {
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.checkout .checkout-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    background: rgb(20, 20, 20);
+    color: white;
+    box-shadow: 0px 0.5px 0.5px rgba(16, 86, 82, .75), 0px 1px 0.5px rgba(16, 86, 82, .75);
+    border-radius: 7px;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+    font-family: rubik;
+}
